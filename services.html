@@ -1,90 +1,329 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - Graphique Éloïse</title>
+
+    <!-- SEO -->
+    <title>Services | Graphique Éloïse</title>
+
+    <meta
+      name="description"
+      content="Browse personalized printing services including mugs, keychains, stickers, notebooks, calendars, badges, and more by Graphique Éloïse."
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-assets/favicon.png" type="image/png" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
   </head>
-  </head>
+
   <body>
-   <header>
+
+    <!-- HEADER -->
+    <header>
       <div class="container nav-container">
-        <h1 class="logo">
-          <img src="images/logo.jpg" alt="Graphique Éloïse Logo" />
-          Graphique Éloïse
-        </h1>
+
+        <a href="index.html" class="logo">
+          <img src="images/logo-assets/logo.jpg" alt="Graphique Éloïse Logo" />
+          <span>Graphique Éloïse</span>
+        </a>
+
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <div class="menu-toggle">&#9776;</div>
-        <!-- Hamburger -->
+
       </div>
     </header>
 
-    <section class="services">
+    <!-- PAGE HERO -->
+    <section class="page-hero">
       <div class="container">
-        <h2>Our Services</h2>
+        <h1>Our Services</h1>
+        <p>
+          Professional printing and personalized products
+          for school, business, events, and special occasions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- PERSONALIZED ITEMS -->
+    <!-- ========================= -->
+    <section class="services-section">
+
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Personalized Items</h2>
+          <p>Customized products perfect for gifts, giveaways, souvenirs, and branding.</p>
+        </div>
+
         <div class="service-grid">
+
+          <!-- ITEM -->
           <div class="service-item">
-            <img src="images/sintra.jpg" alt="Sintra Printing" />
-            <h3>Sintra Printing</h3>
+
+            <div class="service-image">
+              <img src="images/products/mug.jpg" alt="Personalized Mug" loading="lazy" />
+            </div>
+
+            <div class="service-item-content">
+
+              <h3>Personalized Mugs</h3>
+              <p>High-quality customized mugs for birthdays, events, and souvenirs.</p>
+
+              <div class="service-footer">
+                <p class="price">Starts at ₱150</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+
+            </div>
+
           </div>
+
           <div class="service-item">
-            <img src="images/mug.jpg" alt="Personalized Mug" />
-            <h3>Personalized Mug</h3>
+
+            <div class="service-image">
+              <img src="images/products/keychain.jpg" alt="Trinket Keychains" loading="lazy" />
+            </div>
+
+            <div class="service-item-content">
+
+              <h3>Trinket Keychains</h3>
+              <p>Personalized keychains ideal for giveaways, souvenirs, and events.</p>
+
+              <div class="service-footer">
+                <p class="price">Starts at ₱35</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+
+            </div>
+
           </div>
+
           <div class="service-item">
-            <img src="images/keychain.jpg" alt="Trinket Key Chains" />
-            <h3>Trinket Key Chains</h3>
+
+            <div class="service-image">
+              <img src="images/products/badges.jpg" alt="Personalized Badges" loading="lazy" />
+            </div>
+
+            <div class="service-item-content">
+
+              <h3>Personalized Badges</h3>
+              <p>Customized badges for schools, organizations, and events.</p>
+
+              <div class="service-footer">
+                <p class="price">Starts at ₱25</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+
+            </div>
+
           </div>
+
           <div class="service-item">
-            <img src="images/badges.jpg" alt="Personalized Badges" />
-            <h3>Personalized Badges</h3>
+
+            <div class="service-image">
+              <img src="images/products/ref-magnet.jpg" alt="Ref Magnet" loading="lazy" />
+            </div>
+
+            <div class="service-item-content">
+
+              <h3>Ref Magnets</h3>
+              <p>Personalized refrigerator magnets for souvenirs and giveaways.</p>
+
+              <div class="service-footer">
+                <p class="price">Starts at ₱40</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+
+            </div>
+
           </div>
-          <div class="service-item">
-            <img src="images/stickers.jpg" alt="Stickers" />
-            <h3>Stickers</h3>
-          </div>
-          <div class="service-item">
-            <img src="images/ref-magnet.jpg" alt="Vinyl Stickers" />
-            <h3>Ref Magnet</h3>
-          </div>
-          <div class="service-item">
-            <img src="images/pens.jpg" alt="Personalized Pens & Pencils" />
-            <h3>Pens & Pencils</h3>
-          </div>
-          <div class="service-item">
-            <img src="images/notebooks.jpg" alt="Personalized Notebooks" />
-            <h3>Notebooks</h3>
-          </div>
-          <div class="service-item">
-            <img src="images/calendars.jpg" alt="Personalized Calendars" />
-            <h3>Calendars</h3>
-          </div>
+
         </div>
       </div>
     </section>
 
-     <!-- Footer -->
+    <!-- PRINTING SERVICES -->
+    <section class="services-section dark-section">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Printing Services</h2>
+          <p>Quality printing solutions for students, professionals, and businesses.</p>
+        </div>
+
+        <div class="service-grid">
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/sintra.jpg" alt="Sintra Printing" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Sintra Printing</h3>
+              <p>Durable signage and promotional display printing.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱250</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/stickers.jpg" alt="Stickers" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Custom Stickers</h3>
+              <p>Waterproof and high-quality stickers for branding and decorations.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱50</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/research.png" alt="Research Printing" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Research Paper Printing</h3>
+              <p>Professional printing and binding for academic requirements.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱5/page</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/photocopy_service.png" alt="Photocopy Services" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Photocopy Services</h3>
+              <p>Fast and affordable black-and-white and colored photocopying.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱2/page</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHOOL & OFFICE -->
+    <section class="services-section">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>School & Office Items</h2>
+          <p>Personalized supplies for students, teachers, and professionals.</p>
+        </div>
+
+        <div class="service-grid">
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/pens.jpg" alt="Pens and Pencils" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Pens & Pencils</h3>
+              <p>Customized writing materials for schools, giveaways, and promotions.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱20</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/notebooks.jpg" alt="Personalized Notebooks" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Personalized Notebooks</h3>
+              <p>Stylish notebooks for school, office, and gifts.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱120</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="images/products/calendars.jpg" alt="Personalized Calendars" loading="lazy" />
+            </div>
+            <div class="service-item-content">
+              <h3>Personalized Calendars</h3>
+              <p>Custom desk and wall calendars for giveaways and business promotions.</p>
+              <div class="service-footer">
+                <p class="price">Starts at ₱180</p>
+                <a href="contact.html" class="btn">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Need Customized Printing Services?</h2>
+        <p>Contact us today and let us bring your ideas to life.</p>
+
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn">Contact Us</a>
+          <a href="https://m.me/iamGraphiqueEloise" target="_blank" class="btn btn-outline">
+            Message Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
       <div class="container">
         <p>&copy; 2026 Graphique Éloïse. All Rights Reserved.</p>
+
         <div class="social-links">
-          <a href="https://www.facebook.com/iamGraphiqueEloise" target="_blank"
-            >Facebook</a
-          >
+          <a href="https://www.facebook.com/iamGraphiqueEloise" target="_blank">Facebook</a>
           |
           <a href="mailto:eloisa.agustin1208@gmail.com">Email</a>
         </div>
       </div>
     </footer>
+
+    <!-- Floating Messenger -->
+    <a href="https://m.me/iamGraphiqueEloise" class="messenger-float" target="_blank">💬</a>
+
     <script src="js/script.js"></script>
+
   </body>
 </html>

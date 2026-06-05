@@ -1,91 +1,158 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Graphique Éloïse</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/favicon.png" type="image/png" />
-  </head>
-  <body>
-    <!-- Header -->
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Graphique Éloïse</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
     <header>
       <div class="container nav-container">
-        <h1 class="logo">
-          <img src="images/logo.jpg" alt="Graphique Éloïse Logo" />
-          Graphique Éloïse
-        </h1>
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img
+            src="images/logo-assets/logo.jpg"
+            alt="Graphique Éloïse Logo"
+          />
+          <span>Graphique Éloïse</span>
+        </a>
+
+        <!-- Navigation -->
         <nav>
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="services.html">Services</a></li>
+            <!-- <li><a href="gallery.html">Gallery</a></li> -->
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
+        <!-- Mobile Menu -->
         <div class="menu-toggle">&#9776;</div>
-        <!-- Hamburger -->
+
       </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to place an order? Reach out to us!</p>
 
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-          <p id="formMessage" class="form-message"></p>
-        </form>
-      </div>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or want to place an order? We’re here to help.</p>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2026 Graphique Éloïse. All Rights Reserved.</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/iamGraphiqueEloise" target="_blank"
-            >Facebook</a
-          >
-          |
-          <a href="mailto:eloisa.agustin1208@gmail.com">Email</a>
+<!-- =========================
+     CENTERED EMAILJS FORM
+========================= -->
+<section class="contact-form-section">
+  <div class="container">
+
+    <div class="form-card">
+
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form below and we’ll respond as soon as possible.</p>
+
+      <!-- EMAILJS FORM (UNCHANGED IDS) -->
+      <form id="contactForm">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
         </div>
-      </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn full-btn">
+          Send Message
+        </button>
+
+        <p id="formMessage" class="form-message"></p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+
+    <h2>Prefer Faster Response?</h2>
+    <p>You can also message us directly on Facebook Messenger.</p>
+
+    <div class="cta-buttons">
+      <a href="https://m.me/iamGraphiqueEloise" target="_blank" class="btn">💬 Messenger</a>
+      <a href="mailto:eloisa.agustin1208@gmail.com" class="btn btn-outline">📧 Email</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <p>&copy; 2026 Graphique Éloïse. All Rights Reserved.</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/iamGraphiqueEloise" target="_blank">Facebook</a>
+      |
+      <a href="mailto:eloisa.agustin1208@gmail.com">Email</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- FLOAT BUTTON -->
+<a href="https://m.me/iamGraphiqueEloise" class="messenger-float" target="_blank">💬</a>
+
+<!-- EMAILJS SCRIPT (KEEP THIS EXACTLY) -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- YOUR SCRIPT -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
